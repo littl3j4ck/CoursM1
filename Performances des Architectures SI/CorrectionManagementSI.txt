@@ -1,0 +1,73 @@
+﻿Correction Management S.I
+
+Définition du S.I existant
+
+-33 utilisateurs
+-SI hétorgènes (apllication standard, aplication sur mesure)
+-Connection Internet non sécurisé (S.I obsolète)
+-Architecture en oscilo
+
+-Mise en place du progiciel ARCA (ERP spécialisé)
+-Va nécessité en mise place d’une nouvelle architecture.
+
+Pourquoi :
+-D’etre mise au niveau de la réglementation
+-Perte de cliente
+
+Impact :
+-Assuré la sécurité des données
+-Avantages concurentiels
+-Hausse de la productivité
+-gagne de temps
+-Meilleur pilotage de projet
+-Satisfaction du client
+
+Opportunités :
+-L’ARGENT
+-Réorganiser les process métiers.
+
+Impact Stratégiques :
+-Fidélatiser le client par des extensions de produits/services.
+-
+
+Risques :
+-Dépensamment du projet
+-Sous estime la taille du projet
+-Mauvais choix de la technologie
+-pré requis non nécessaire
+-L’évolutivité de la solution logiciel.
+-L’urbanisation de système d’information
+
+Risques de la mise en œuvre du projet :
+-Résistance de la part des acteurs du changement.
+-mauvaise adapation
+-dégradation de relation humaines (concurrence interpersonnel)
+
+Les enjeux techniques :
+-Mise à niveau du S.I
+-Achat materiel
+-Mise en place de sécurité
+-Doté de plus de passer
+-Connexion à distance
+-Débit de réseau
+-Sauvegarde
+
+Ajout :
+La gestion electronique des documents
+Mise en place d’un progiciel arca
+	Architecture un tier, Sécurité des données
+	Ensemble des interfaces web
+
+Les impacts sur la pratiques :
+
+-Meilleur contrôle des flux
+-Meilleur contrôle du contenu du travail
+-Qualité de service
+-impact sur l’organisation du travail des acteurs : Amélioration des conditions des travails.
+
+Deux types inopportunités/risques.
+
+Une lors de la mise en œuvre du projet, et la gestion de projet.
+
+
+
