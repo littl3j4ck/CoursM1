@@ -1,0 +1,17 @@
+L’ANSSI distribue un logiciel EBIOS 2010 conforme à l’état de l’art au jour de son développement. L’ANSSI veille à la qualité du logiciel EBIOS 2010, néanmoins elle ne saurait être tenue pour responsable de l’utilisation qui en serait faite, ou de tout dommage causé par le logiciel au support informatique sur lequel il aura été copié ou installé.
+
+Il convient d’installer et d’utiliser le logiciel EBIOS 2010 sur un poste isolé de toute connexion internet et équipé d’un système d’exploitation Microsoft Windows ou Apple Mac OS. . L’installation du logiciel EBIOS 2010 n’est pas supportée sous Linux. 
+
+Le logiciel EBIOS 2010 n’est pas un tutoriel. Il est nécessaire de connaître préalablement la méthode EBIOS afin de tirer le meilleur parti du logiciel.
+
+L’ANSSI n’assure aucun support concernant l’utilisation du logiciel EBIOS 2010. L’ANSSI décline toute responsabilité si : 
+-	le logiciel ne fonctionne pas sur l’ordinateur de l’utilisateur ;
+-	les livrables ne donnent pas les effets attendus.
+En effet la qualité des livrables dépend principalement des données fournies par l’utilisateur au logiciel.
+
+Enfin, l’ANSSI peut décider unilatéralement et à tout moment de suspendre ou d'arrêter la diffusion de ce logiciel.
+
+Vous pouvez envoyer vos questions, remarques et commentaires à l’adresse EBIOS@ssi.gouv.fr.
+
+Le licencié peut librement utiliser la marque EBIOS avec toutes les versions initiales ou modifiées du logiciel EBIOS.
+
