@@ -1,0 +1,82 @@
+<ion-content>
+    
+    <ion-refresher (ionRefresh)="loadNearestStations($event)">
+        <ion-refresher-content
+            pullingIcon="arrow-dropdown"
+            pullingText="Descendre pour actualiser"
+            refreshingSpinner="circles"
+            refreshingText="Actualisation ...">
+        </ion-refresher-content>
+    </ion-refresher>
+
+    <ion-item no-lines>
+        <ion-label>
+            Stations avec places disponibles
+        </ion-label>
+    </ion-item>
+
+    <ion-card *ngFor="let s of stands" (click)="goToStation(s['lon'], s['lat'])">
+        <ion-card-header>
+            {{ s['name'] }} 
+            <div float-right class="city">
+                {{ s['city'] }}
+            </div>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-12>
+                        <ion-item>
+                            <ion-icon name="navigate" color="primary" item-left>
+                            </ion-icon>
+                            <ion-label text-wrap class="address">
+                                {{ s['address'] }}
+                            </ion-label>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label text-wrap class="counter">
+                                {{ countMessage(s['stands_available'], 'stands') }}
+                            </ion-label>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card-content>
+    </ion-card>
+
+    <ion-item no-lines>
+        <ion-label>
+            Stations avec Vélo'V disponibles
+        </ion-label>
+    </ion-item>
+    
+    <ion-card *ngFor="let s of stands" (click)="goToStation(s['lon'], s['lat'])">
+        <ion-card-header>
+            {{ s['name'] }}
+            <div float-right class="city">
+                {{ s['city'] }}
+            </div>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-grid>
+                <ion-row>
+                    <ion-col col-12>
+                        <ion-item>
+                            <ion-icon name="navigate" color="primary" item-left>
+                            </ion-icon>
+                            <ion-label text-wrap class="address">
+                                {{ s['address'] }}
+                            </ion-label>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label class="counter" text-wrap>
+                                {{ countMessage(s['bikes_available'], 'bikes') }}
+                            </ion-label>
+                        </ion-item>
+                    </ion-col>
+                </ion-row>
+            </ion-grid>
+        </ion-card-content>
+    </ion-card>
+
+</ion-content>

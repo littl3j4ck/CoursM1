@@ -1,0 +1,32 @@
+page-velov-nearest {
+
+    .city {
+        color: map-get($colors, darkgrey);
+        font-size: 11px;
+        padding-top: 3px;
+    }
+
+    ion-card-header {
+        padding-bottom: 1px !important;
+    }
+
+    ion-icon {
+        font-size: 9px;
+        color: map-get($colors, darkgrey);
+    }
+
+    .address {
+        font-size: 14px;
+        color: rgb(104, 104, 104);
+    }
+
+    ion-card-content {
+        padding-bottom: 1px !important;
+    }
+
+    .counter {
+        margin-top: 1px !important;
+        margin-bottom: 1px !important;
+    }
+
+}

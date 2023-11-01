@@ -1,0 +1,3 @@
+route_id,agency_id,route_short_name,route_long_name,route_desc,route_type,route_color
+RXa1,1,"RX","Gare Part  Dieu --> Aeroport St Exupery",REG - LFO - EXP - CD10,0,00FFFA
+RXr2,1,"RX","Aeroport St Exupery --> Gare Part  Dieu",REG - LFO - EXP - CD10,0,00FFFA

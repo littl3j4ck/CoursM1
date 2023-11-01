@@ -1,0 +1,28 @@
+<ion-menu [content]="content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+    <ion-list no-lines>
+      <div *ngFor="let p of pages">
+        <button ion-item class="item-stable" (click)="p.subs.length > 0 ? toggleGroup(p.id) : openPage(p.component)">{{ p.title }}
+            <ion-icon name="ios-arrow-forward" [class.selected_menu]="isGroupShown(p.id)" item-end *ngIf="p.subs.length > 0"></ion-icon>
+            <ion-icon [name]="p.icon" item-start></ion-icon>
+        </button>
+        <!-- Sub menu -->
+        <div *ngFor="let sub of p.subs">
+          <button menuClose ion-item class="item-stable" *ngIf="isGroupShown(p.id)" (click)="openPage(sub.subComponent)">
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;{{ sub.subTitle }}
+          </button>
+        </div>
+      </div>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

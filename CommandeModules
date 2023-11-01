@@ -1,0 +1,12 @@
+/etc/module
+/etc/mprobed/blacklist.conf
+
+
+Insmod: initialisation d'un module
+Rmmod: déchargement d'un module
+
+Rmmod -A : déchargement de tout les modules non utilisé
+
+irq: interruption materielle
+
+dma: zone de mémoir donné par un périph

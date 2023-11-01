@@ -1,0 +1,15 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Vélo'v</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-tabs #velov_tabs id="velov_tabs" name="velov_tabs" tabs-only tabsLayout="icon-end" selectedIndex="0" color="light">
+    <ion-tab tabTitle="A proximité" tabIcon="map" [root]="nearest"></ion-tab>
+    <ion-tab tabTitle="Carte" tabIcon="map" [root]="mapPage"></ion-tab>
+  </ion-tabs>
+</ion-content>

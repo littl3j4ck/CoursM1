@@ -1,0 +1,19 @@
+module gestionBancaire{
+
+	interface Compte{
+		readonly attribute float solde;
+	
+		attribute string nomClient;
+		boolean crediter(in double somme);
+		boolean debiter(in double somme);
+		string infosCompte();
+};
+interface Agence{
+attribute string nom;
+	Compte creercompte(in string nom, in float solde);
+	boolean supprimerCompte(in string nom);
+	Compte rechercherCompte(in string nom);
+	string afficherListeCompte();
+};
+};
+

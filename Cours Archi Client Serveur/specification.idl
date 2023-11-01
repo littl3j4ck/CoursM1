@@ -1,0 +1,26 @@
+module Banque { 
+		
+		interface Compte{
+			
+			attribute string nomClient;
+			readonly attribute float solde;
+			
+			boolean debiter (in float somme);
+			boolean crediter (in float somme);
+			string infosCompte();
+			
+		};
+		
+		interface Agence{
+			attribute string nom;
+			
+			Compte  creerCompte(in string nom, in float solde);
+			boolean supprimerCompte(in string nom);
+			Compte  rechercherCompte(in string nom);
+			string  afficherListeCompte();
+		};
+		
+		
+};
+			
+			

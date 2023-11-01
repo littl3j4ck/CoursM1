@@ -1,0 +1,62 @@
+<!--
+  Generated template for the InterestparkingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar>
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
+      <ion-title *ngIf="parkingInfo !== null">{{ parkingInfo['name'] }}</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content>
+    <ion-card text-wrap>
+      <div id="map" style="width: 100%; height: 200px;"></div>
+  
+      <ion-card-content *ngIf="parkingInfo !== null">
+        <ion-card-title>
+          {{ parkingInfo['name'] }}
+          </ion-card-title>
+        <ion-list *ngIf="parkingInfo !== null">
+          <ion-item *ngIf="parkingInfo['state'] !== ''">
+            <ion-icon item-left name="md-car"></ion-icon>
+            <ion-label>{{ parkingInfo['state'] }}</ion-label>
+          </ion-item>           
+          <ion-item *ngIf="parkingInfo['car_places'] !== ''">
+            <ion-icon item-left name="md-cash"></ion-icon>
+            <ion-label>{{ parkingInfo['car_places'] }}</ion-label>
+          </ion-item>
+          <ion-item *ngIf="parkingInfo['motorcycle_places'] !== ''">
+            <ion-icon name="md-cash"></ion-icon>
+            <ion-label>{{ parkingInfo['motorcycle_places'] }}</ion-label>
+          </ion-item>
+          <ion-item *ngIf="parkingInfo['carsharing_places'] !== ''">
+            <ion-icon name="md-cash"></ion-icon>
+            <ion-label>{{ parkingInfo['carsharing_places'] }}</ion-label>
+          </ion-item>
+          <ion-item *ngIf="parkingInfo['pmr_places'] !== ''">
+            <ion-icon name="md-cash"></ion-icon>
+            <ion-label>{{ parkingInfo['pmr_places'] }}</ion-label>
+          </ion-item>
+        </ion-list>
+      </ion-card-content>
+  
+      <ion-row no-padding>
+        <ion-col text-center>
+          <button ion-button clear small color="danger" icon-start>
+            <ion-icon name='navigate'></ion-icon>
+            En route
+          </button>
+        </ion-col>
+      </ion-row>
+  
+    </ion-card>
+  </ion-content>
+  

@@ -1,0 +1,7 @@
+{
+  "name": "Android_Begone",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

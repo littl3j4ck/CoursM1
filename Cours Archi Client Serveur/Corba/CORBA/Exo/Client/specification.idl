@@ -1,0 +1,5 @@
+module ReverseApp
+{ interface Reverse
+{ string reverseString(in string chaineOrigine);
+};
+};

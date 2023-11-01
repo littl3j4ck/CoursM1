@@ -1,0 +1,72 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle><ion-icon name="menu"></ion-icon></button>
+    <ion-title>Begone</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content style="overflow: hidden;">
+  <ion-card *ngIf="weather !== undefined">
+    <ion-card-header>
+      Lyon
+      <ion-label class="date">
+          {{ getFullDate() }}
+      </ion-label>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row text-center class="icon-row icon-head">
+          <ion-col>
+            <i class="wi wi-night-alt-hail"></i>
+          </ion-col>
+        </ion-row>
+        <ion-row text-center class="icon-row">
+          <ion-col col-4>
+            <i class="wi wi-humidity gray"></i>
+          </ion-col>
+          <ion-col col-4 class="rl-border">
+            <i class="wi wi-thermometer gray"></i>
+          </ion-col>
+          <ion-col col-4>
+            <i class="wi wi-strong-wind gray"></i>
+          </ion-col>
+        </ion-row>
+        <ion-row text-center class="data-row">
+          <ion-col col-4>
+            {{ weather['humidity'] }} %
+          </ion-col>
+          <ion-col col-4 class="rl-border">
+            {{ weather['temperature'] }} °C
+          </ion-col>
+          <ion-col col-4>
+            {{ weather['wind_speed'] }} km/h
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card *ngIf="atmo !== undefined">
+    <ion-card-content>
+      <ion-grid>
+        <ion-row text-center>
+          <ion-col>
+            Indice pour la qualité de l'air
+          </ion-col>
+        </ion-row>
+        <ion-row text-center class="data-row">
+            <ion-col col-6>
+              <ion-label class="air-score" [style.color]="atmo['color']">{{ atmo['value'] }}</ion-label>
+              <ion-label class="air-max-score"> / 100</ion-label>
+            </ion-col>
+            <ion-col col-6>
+              <ion-label>{{ atmo['qualifier'] }}</ion-label>
+            </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+
+  <!--<img src="assets/imgs/st_jean.svg" style="filter: grayscale(1); opacity: 0.2; position: ; bottom: -60%; width: 100%; overflow: hidden;">-->
+
+</ion-content>

@@ -1,0 +1,10 @@
+module gestionBancaire{
+	interface Compte{
+	readonly attribute float solde;
+		attribute String titulaire;
+		void crediter(in float somme);
+		void debiter(in float somme);
+		String infosCompte();
+};
+};
+
